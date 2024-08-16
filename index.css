@@ -6,6 +6,10 @@ body{
     background-color: #0e6474;
     overflow: hidden;
     font-family: sans-serif;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://i.etsystatic.com/19161821/c/2201/1749/451/206/il/8bba20/2108533632/il_500x500.2108533632_8nyg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .giftContainer{
     position: relative;
@@ -25,7 +29,7 @@ body{
 position: absolute;
 width: 150px;
 height: 100px;
-background-color: burlywood;
+background-color: rgb(170, 17, 101);
 }
 
 .gift::before{
@@ -33,7 +37,7 @@ background-color: burlywood;
     position: absolute;
     width: 25px;
     height: 100px;
-    background-color: brown;
+    background-color: rgb(79, 42, 165);
     left: 62px;
 }
 .gift::after{
@@ -48,7 +52,7 @@ background-color: burlywood;
 }
 .click{
     position: absolute;
-    background-color: burlywood;
+    background-color: rgb(170, 17, 101);
     width: 170px;
     height: 40px;
     top: -40px;
@@ -66,7 +70,7 @@ background-color: burlywood;
     content: '';
     width: 25px;
     height: 40px;
-    background-color: brown;
+    background-color:rgb(79, 42, 165);
     left: 72px;
 }
 .click::after{
@@ -74,10 +78,10 @@ background-color: burlywood;
     position: absolute;
     width: 5px;
     height: 0;
-    border-bottom: 30px solid brown;
-    border-top: 30px solid brown;
+    border-bottom: 30px solid rgb(79, 42, 165);
+    border-top: 30px solid rgb(79, 42, 165);
     border-left: 0px solid transparent;
-    border-right: 30px solid brown;
+    border-right: 30px solid rgb(79, 42, 165);
     transform: rotate(-90deg);
     left: 65px;
     top: -47px;
