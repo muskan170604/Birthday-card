@@ -1,0 +1,107 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0e6474;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.giftContainer{
+    position: relative;
+}
+
+.giftContainer::before{
+    content: '';
+    position:absolute;
+    width: 170px;
+    height: 20px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    top: 90px;
+    left: -10px;
+}
+.gift{
+position: absolute;
+width: 150px;
+height: 100px;
+background-color: burlywood;
+}
+
+.gift::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 100px;
+    background-color: brown;
+    left: 62px;
+}
+.gift::after{
+    content: '';
+    position: absolute;
+    box-shadow: 0 10px rgba(0,0,0,0.3);
+    width: 150px;
+    height: 100px;
+}
+#click{
+    display: none;
+}
+.click{
+    position: absolute;
+    background-color: burlywood;
+    width: 170px;
+    height: 40px;
+    top: -40px;
+    left: -10px;
+    transform-origin: bottom left;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.click::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 40px;
+    background-color: brown;
+    left: 72px;
+}
+.click::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 0;
+    border-bottom: 30px solid brown;
+    border-top: 30px solid brown;
+    border-left: 0px solid transparent;
+    border-right: 30px solid brown;
+    transform: rotate(-90deg);
+    left: 65px;
+    top: -47px;
+}
+#click:checked+.click{
+    transform: rotate(-110deg) scale(0.085);
+}
+#click:checked~.wishes{
+    transform: translateY(-120px);
+}
+.wishes{
+    position: absolute;
+    transition: .5s;
+    color: dimgrey;
+    font-size: 30px;
+    text-transform:capitalize;
+    text-align: center;
+    z-index: -1;
+    left: 10px;
+    color: #fff;
+    text-shadow: 0 0 10px black;
+}
+.link{
+    margin-top: 280px;
+    margin-left: 30px;
+}
+.link a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
