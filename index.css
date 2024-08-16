@@ -57,6 +57,10 @@ background-color: burlywood;
     transition: 0.3s;
     cursor: pointer;
 }
+.click .tap{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
 .click::before{
     position: absolute;
     content: '';
