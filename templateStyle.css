@@ -157,6 +157,10 @@ body{
     background-image: url(https://64.media.tumblr.com/4ed6dd474ffede2eb21f7f9fd1b0d5ca/tumblr_pq7uzancyn1x5406co5_400.gif);
     overflow: hidden;
 }
+.frames:nth-child(3){
+    display: none;
+}
+
 }
 
 @media(max-width:1200px){
