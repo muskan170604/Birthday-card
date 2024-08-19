@@ -175,3 +175,11 @@ h2{
 a{
     text-decoration: none;
 }
+.audio{
+    display: none;
+    transition: 0.1s;
+}
+
+.text{
+    display:none;
+}

@@ -79,12 +79,17 @@ body{
     border-radius: 70%;
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
     margin-bottom: 1.5rem;
+    opacity: 1;
 }
 .frames p{
     font-size: 20px;
     font-weight: bold;
     margin-left: 2rem;
     padding: 2rem;
+    opacity: 0;
+}
+.frames p:hover{
+    opacity: 1;
 }
 
 .frames:nth-child(1)
@@ -181,7 +186,16 @@ body{
         text-align: center;
     }
     }
+    .audio{
+        display: none;
+        transition: 0.1s;
+    }
 
-
-    
+    .msgBox .msg{
+        font-size: 30px;
+        color: white;
+        font-style: italic;
+        margin-left: 55rem;
+        margin-top: 35rem;
+    }
     
